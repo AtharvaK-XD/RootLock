@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PASSWORD ANALYZER // SECURITY PROTOCOL v2.0</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <canvas id="matrix-canvas" aria-hidden="true"></canvas>
+  <div id="flash-layer" aria-hidden="true"></div>
+  <div id="particles" class="particles" aria-hidden="true"></div>
+
+  <div id="boot" class="boot-overlay" role="status" aria-live="polite">
+    <div class="boot-terminal" id="boot-text"></div>
+  </div>
+
+  <div id="app" class="app-wrap hidden-until-boot">
+    <div class="container">
+      <header>
+        <h1 class="glitch-title" data-text="PASSWORD ANALYZER" aria-label="Password Analyzer">PASSWORD ANALYZER</h1>
+        <p class="subtitle">SECURITY PROTOCOL v2.0</p>
+      </header>
+
+      <div class="panel">
+        <div class="input-row">
+          <div class="terminal-input-wrap">
+            <span class="prompt" aria-hidden="true">&gt;</span>
+            <div class="input-inner">
+              <input
+                type="password"
+                id="password"
+                class="pwd-field"
+                autocomplete="off"
+                spellcheck="false"
+                placeholder="enter passphrase..."
+                aria-label="Password input"
+              />
+              <span class="fake-cursor" aria-hidden="true"></span>
+            </div>
+          </div>
+          <button type="button" id="toggle-visibility" class="toggle-vis" aria-label="Show password" title="Show / hide">
+            <span id="eye-icon" class="eye-glyph">👁</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="panel strength-block">
+        <div id="strength-label" class="strength-label" style="color: var(--text-dim);">⚠ AWAITING INPUT</div>
+        <div class="meter" id="meter" role="progressbar" aria-valuemin="0" aria-valuemax="5" aria-valuenow="0" aria-label="Password strength">
+          <div class="segment" data-i="0"></div>
+          <div class="segment" data-i="1"></div>
+          <div class="segment" data-i="2"></div>
+          <div class="segment" data-i="3"></div>
+          <div class="segment" data-i="4"></div>
+        </div>
+      </div>
+
+      <div class="panel">
+        <div id="terminal" class="terminal-out" aria-live="polite"></div>
+      </div>
+
+      <div class="panel stats-grid">
+        <div class="stat-card">
+          <div class="stat-tag">[BREACH SIMULATION]</div>
+          <div id="crack-time" class="crack-value" style="color: var(--text-dim);">EST. CRACK TIME: —</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-tag">ENTROPY</div>
+          <div class="entropy-led">
+            <div class="led-ring-wrap">
+              <svg width="72" height="72" viewBox="0 0 72 72" aria-hidden="true">
+                <circle class="led-ring-bg" cx="36" cy="36" r="28" />
+                <circle id="entropy-ring" class="led-ring-fill" cx="36" cy="36" r="28" />
+              </svg>
+              <div class="led-digits" id="entropy-led-text">0</div>
+            </div>
+            <div id="entropy-label" style="font-size:0.72rem;color:var(--neon-green);line-height:1.4;">ENTROPY: 0.0 bits</div>
+          </div>
+        </div>
+      </div>
+
+      <div id="suggestions-wrap" class="panel suggestions" style="display: none;">
+        <div class="alert-head">[!] ALERT:</div>
+        <ul id="suggestions-list"></ul>
+      </div>
+
+      <div class="panel actions">
+        <button type="button" id="btn-generate" class="action-btn">Generate secure key</button>
+        <button type="button" id="btn-copy" class="action-btn">Copy to clipboard</button>
+      </div>
+
+      <footer>SYSTEM SECURED BY ATHARVA // ALL RIGHTS RESERVED</footer>
+    </div>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
