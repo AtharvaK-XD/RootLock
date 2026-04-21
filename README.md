@@ -1,16 +1,16 @@
 # RootLock
-I’m excited to share RootLock — a password analyzer I built to help users understand how secure their passwords really are.
 
-RootLock checks whether a password is strong or easy to crack, and it also estimates the time it may take to crack the entered password based on its complexity. The idea behind this project was to create a simple, interactive way to make password security more visible and easier to understand.
+RootLock is a password analyzer that checks password strength, entropy, and estimated crack time. It helps users understand how secure their passwords are through a clean and interactive interface.
 
-Through RootLock, I explored:
+## Features
+- Real-time password strength checking
+- Crack-time estimation
+- Entropy display in bits
+- Cyber-inspired UI
 
-Password strength analysis
+## Tech Stack
+- HTML
+- CSS
+- JavaScript
 
-Crack-time estimation
-
-Security-focused UI design
-
-Creating a clean and engaging user experience
-
-This project was a great learning experience for me, especially in combining cybersecurity concepts with frontend development.
+- Live Demo: rootlock.netlify.app
