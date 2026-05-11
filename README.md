@@ -6,7 +6,7 @@ RootLock is a password analyzer that checks password strength, entropy, and esti
 - Real-time password strength checking
 - Crack-time estimation
 - Entropy display in bits
-- Cyber-inspired UI
+- Cyber-inspired user interface
 
 ## Tech Stack
 - HTML
