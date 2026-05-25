@@ -13,5 +13,5 @@ RootLock is a password analyzer that checks password strength, entropy, and esti
 - CSS
 - JavaScript
 
-## Live Link
+## Demo link
 - Live Demo Link: rootlock.netlify.app
