@@ -1,10 +1,5 @@
 # 🔐 RootLock — Know Your Weakness Before They Do
 
-> Real-time password intelligence from the depths of the terminal.
-
-[![RootLock Demo](https://img.youtube.com/vi/YOUR_VIDEO_ID/maxresdefault.jpg)](https://rootlock.netlify.app)
-
-> 📸 *Replace the thumbnail above with your actual YouTube demo link once uploaded*
 
 🚀 **[Live Site](https://rootlock.netlify.app)**
 
