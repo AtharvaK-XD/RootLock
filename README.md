@@ -147,9 +147,3 @@ RootLock is a **portfolio project** built for educational purposes. It does not 
 ## 📄 License
 
 Open and free for inspiration. Feel free to explore, fork, and build on the idea.
-
----
-
-<div align="center">
-  <p>Built with ☕ and a paranoia for weak passwords by <a href="https://github.com/AtharvaK-XD">@AtharvaK-XD</a></p>
-</div>
