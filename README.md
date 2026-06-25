@@ -141,9 +141,3 @@ git push origin feature/your-feature-name
 ## 📌 Disclaimer
 
 RootLock is a **portfolio project** built for educational purposes. It does not store, transmit, or log any passwords entered. All analysis happens locally in your browser.
-
----
-
-## 📄 License
-
-Open and free for inspiration. Feel free to explore, fork, and build on the idea.
